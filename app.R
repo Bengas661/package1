@@ -1,12 +1,13 @@
 
 
 library(shiny)
- 
+library(vroom)
+
 setwd("C:/Users/user/Desktop/rcodes shiny/Mastering R-Shiny ebook/20 packages/creatpack")
 source("birthstone.r")
 source("monthFeedback.r")
 
-stones <- vroom::vroom("birthstones.csv")
+stones <- vroom("birthstones.csv")
 
 months <- c(
   "January", "February", "March", "April", "May", "June",
